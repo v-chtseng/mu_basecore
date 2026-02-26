@@ -21,7 +21,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #define MBR_SIZE  512
 
-#pragma pack(1)
+#pragma pack(push,1)
 ///
 /// MBR Partition Entry
 ///
@@ -49,6 +49,6 @@ typedef struct {
   UINT16                  Signature;
 } MASTER_BOOT_RECORD;
 
-#pragma pack()
+#pragma pack(pop)
 
 #endif

@@ -26,7 +26,7 @@
 #define PARTITION_TYPE_MBR                    0x01
 #define PARTITION_TYPE_GPT                    0x02
 
-#pragma pack(1)
+#pragma pack(push,1)
 
 ///
 /// Partition Information Protocol structure.
@@ -57,7 +57,7 @@ typedef struct {
   } Info;
 } EFI_PARTITION_INFO_PROTOCOL;
 
-#pragma pack()
+#pragma pack(pop)
 
 ///
 /// Partition Information Protocol GUID variable.

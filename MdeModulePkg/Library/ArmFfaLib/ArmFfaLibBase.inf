@@ -37,6 +37,7 @@
   PcdLib
   MemoryAllocationLib
   TimerLib
+  SafeIntLib
 
 [Pcd]
   gEfiMdeModulePkgTokenSpaceGuid.PcdFfaLibConduitSmc

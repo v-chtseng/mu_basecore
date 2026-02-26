@@ -36,16 +36,17 @@ DevicePathFromHandle (
   )
 {
   EFI_DEVICE_PATH_PROTOCOL  *DevicePath;
-  EFI_STATUS                Status;
-
+//  EFI_STATUS                Status;
+/*
   Status = gBS->HandleProtocol (
                   Handle,
                   &gEfiDevicePathProtocolGuid,
                   (VOID *)&DevicePath
                   );
-  if (EFI_ERROR (Status)) {
+*/				  
+//  if (EFI_ERROR (Status)) {
     DevicePath = NULL;
-  }
+//  }
 
   return DevicePath;
 }

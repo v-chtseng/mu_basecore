@@ -31,7 +31,7 @@ __stack_chk_fail (
   );
 
 #elif defined (_MSC_VER)
-
+#error "2"
 // The __security_cookie is a random value placed on the stack between the stack variables
 // and the return address so that continuously writing past the stack variables will cause
 // the stack cookie to be overwritten. Before the function returns, the stack cookie value

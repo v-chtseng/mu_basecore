@@ -13,7 +13,7 @@
 #ifndef __CPER_GUID_H__
 #define __CPER_GUID_H__
 
-#pragma pack(1)
+#pragma pack(push,1)
 
 #define EFI_ERROR_RECORD_SIGNATURE_START  SIGNATURE_32('C', 'P', 'E', 'R')
 #define EFI_ERROR_RECORD_SIGNATURE_END    0xFFFFFFFF
@@ -1306,7 +1306,7 @@ typedef struct {
   UINT64                       DeviceSerialNo;
 } EFI_CXL_COMPONENT_EVENT_LOG;
 
-#pragma pack()
+#pragma pack(pop)
 
 extern EFI_GUID  gEfiEventNotificationTypeCmcGuid;
 extern EFI_GUID  gEfiEventNotificationTypeCpeGuid;

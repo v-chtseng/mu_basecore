@@ -39,3 +39,4 @@
   # the stack cookie variable has been optimized away, as it looks to GCC like the variable is not used, because
   # the compiler inserts the usage.
   GCC:*_*_*_CC_FLAGS = -fno-lto
+  CLANGPDB:*_*_*_CC_FLAGS = -fno-lto
